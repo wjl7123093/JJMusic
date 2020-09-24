@@ -1,0 +1,22 @@
+// 自定义 gradle 配置文件
+ext {
+    android = [
+            applicationId    : 'com.snowapp.app_music',
+            compileSdkVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : '1.0',
+            multiDexEnabled  : true
+
+    ]
+
+    depsVersion = [
+            appcompat: '28.0.0'
+    ]
+
+    depsLibs = [
+            appcompat: "com.android.support:appcompat-v7:${depsVersion.appcompat}",
+
+    ]
+}
